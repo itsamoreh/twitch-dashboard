@@ -1,0 +1,70 @@
+/*
+    COLORS
+
+    PURPLE #6441a4
+    WHITE #
+*/
+
+body {
+  margin-top: 70px;
+}
+
+.navbar-inverse {
+  background-color: #FFF;
+  border-bottom-color: #EAEBED;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #6441a4;
+}
+
+.navbar-inverse .navbar-brand:hover {
+  color: #6441a4;
+}
+
+.navbar-inverse .navbar-nav > li:nth-child(1) > a {
+  color: #383F51;
+}
+.navbar-inverse .navbar-nav > li:nth-child(2) > a {
+  color: #7abc84;
+}
+.navbar-inverse .navbar-nav > li:nth-child(3) > a {
+  color: #ed6a5a;
+}
+.navbar-inverse .navbar-nav > li:nth-child(1) > a:hover {
+  background-color: #383F51;
+  color: #FFF;
+}
+.navbar-inverse .navbar-nav > li:nth-child(2) > a:hover {
+  background-color: #7abc84;
+  color: #FFF;
+}
+.navbar-inverse .navbar-nav > li:nth-child(3) > a:hover {
+  background-color: #ed6a5a;
+  color: #FFF;
+}
+
+/* PANELS */
+.panel-body {
+  height: 125px;  
+}
+
+.panel-success {
+  border-color: #7abc84;
+}
+.panel-success > .panel-heading {
+  background-color: #7abc84;
+  color: #FFF;
+}
+
+.panel-danger {
+  border-color: #ed6a5a;
+}
+.panel-danger > .panel-heading {
+  background-color: #ed6a5a;
+  color: #FFF;
+}
+
+.panel-heading > .status {
+  float: right;
+}
