@@ -2,7 +2,10 @@
     COLORS
 
     PURPLE #6441a4
-    WHITE #
+    RED #ed6a5a
+    GREEN #7abc84
+    YELLOW #e9c46a
+    WHITE #FFF
 */
 
 body {
@@ -26,7 +29,7 @@ body {
   color: #383F51;
 }
 .navbar-inverse .navbar-nav > li:nth-child(2) > a {
-  color: #7abc84;
+  color: #6441a4;
 }
 .navbar-inverse .navbar-nav > li:nth-child(3) > a {
   color: #ed6a5a;
@@ -36,7 +39,7 @@ body {
   color: #FFF;
 }
 .navbar-inverse .navbar-nav > li:nth-child(2) > a:hover {
-  background-color: #7abc84;
+  background-color: #6441a4;
   color: #FFF;
 }
 .navbar-inverse .navbar-nav > li:nth-child(3) > a:hover {
@@ -46,14 +49,19 @@ body {
 
 /* PANELS */
 .panel-body {
-  height: 125px;  
+
+}
+
+/* HIDE PANEL */
+.hiddenRow {
+  display: none !important;
 }
 
 .panel-success {
-  border-color: #7abc84;
+  border-color: #6441a4;
 }
 .panel-success > .panel-heading {
-  background-color: #7abc84;
+  background-color: #6441a4;
   color: #FFF;
 }
 
@@ -63,8 +71,24 @@ body {
 .panel-danger > .panel-heading {
   background-color: #ed6a5a;
   color: #FFF;
+  font-weight: bold;
+}
+
+.panel-warning {
+  border-color: #e9c46a;
+}
+.panel-warning > .panel-heading {
+  background-color: #e9c46a;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.panel-heading > a {
+  color: #FFF;
+  font-weight: bold;
 }
 
 .panel-heading > .status {
   float: right;
+  font-weight: bold;
 }
