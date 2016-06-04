@@ -19,9 +19,9 @@ var writeData = function() {
 
         '<div class="row offlineRow"><div class="col-sm-10 col-sm-offset-1"><div class="panel panel-danger"><div class="panel-heading">' +
         linkUsername +
-        '<span class="status">Offline <i class="fa fa-times-circle"></i></span></div><div class="panel-body"><div style="height: 100%;" class="col-sm-2"><img class="img-thumbnail" src="' +
+        '<span class="status">Offline <i class="fa fa-times-circle"></i></span></div><div class="panel-body"><div class="col-sm-2"><img class="img-thumbnail" src="' +
         'img/no-stream.png' +
-        '"></div><div class="col-sm-10"><p>' +
+        '"></div><div class="col-sm-10"><p><i class="fa fa-times-circle"></i> ' +
         linkUsername +
         ' is offline' +
         '</p></div></div></div></div></div>'
@@ -36,11 +36,13 @@ var writeData = function() {
 
         '<div class="row onlineRow"><div class="col-sm-10 col-sm-offset-1"><div class="panel panel-success"><div class="panel-heading">' +
         linkUsername +
-        '<span class="status">Online <i class="fa fa-check-circle"></i></span></div><div class="panel-body"><div style="height: 100%;" class="col-sm-2">' +
+        '<span class="status">Online <i class="fa fa-check-circle"></i></span></div><div class="panel-body"><div class="col-sm-2">' +
         linkImg +
         '</div><div class="col-sm-10"><p>' +
         '<i class="fa fa-gamepad"></i> ' +
         userData[x].stream.game +
+        '</p><br><p><i class="fa fa-info-circle"></i> ' +
+        userData[x].stream.channel.status +
         '</p><br><p><i class="fa fa-eye"></i> ' +
         userData[x].stream.viewers +
         '</div></div></div></div></div>'
@@ -53,9 +55,9 @@ var writeData = function() {
 
         '<div class="row offlineRow"><div class="col-sm-10 col-sm-offset-1"><div class="panel panel-warning"><div class="panel-heading">' +
         userData[x].message +
-        '<span class="status">Error <i class="fa fa-times-circle"></i></span></div><div class="panel-body"><div style="height: 100%;" class="col-sm-2"><img class="img-thumbnail" src="' +
+        '<span class="status">Error <i class="fa fa-times-circle"></i></span></div><div class="panel-body"><div class="col-sm-2"><img class="img-thumbnail" src="' +
         'img/error.png' +
-        '"></div><div class="col-sm-10"><p>' +
+        '"></div><div class="col-sm-10"><p><i class="fa fa-exclamation-circle"></i> ' +
         userData[x].message +
         '</p></div></div></div></div></div>'
 
