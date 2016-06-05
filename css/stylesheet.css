@@ -99,6 +99,11 @@ body {
   font-weight: bold;
 }
 
+/* THUMBNAILS */
+.img-thumbnail {
+  margin-bottom: 10px;
+}
+
 /* FOOTER */
 
 .footer {
